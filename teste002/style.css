@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#eventos{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(196, 0, 196);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    margin: auto;
+}
+
+input {
+    margin-top: 60px;
+}
