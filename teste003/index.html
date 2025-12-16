@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Condições no JavaScript</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        #res{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(131, 131, 131);
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando IF e ELSE no JavaScript</h1>
+
+    <p>Nota do aluno: <input type="number" name="nota" id="nota" placeholder="Notas"></p>
+    <p>Faltas o aluno: <input type="number" name="faltas" id="faltas" placeholder="Faltas"></p>
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="res">Esperando resultado...</div>
+
+    <script>
+        function enviar() {
+            var nota = document.getElementById('nota')
+            var falta = document.getElementById('faltas')
+            var r = document.getElementById('res')
+            var no = Number(nota.value)
+            var fal = Number(falta.value)
+
+            if (no >= 6 && fal <= 300) {
+                r.innerHTML = `APROVADO`
+                r.style.backgroundColor = 'green'
+            } else {
+                r.innerHTML = `REPROVADO`
+                r.style.backgroundColor = 'red'
+            }
+        }
+    </script>
+</body>
+</html>
