@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade com Java Script</title>
+</head>
+<body>
+    <h1>Verificação de idade</h1>
+
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <p id="res"></p>
+
+    <script>
+        function verificar() {
+            var i = document.getElementById('idade')
+            var r = document.getElementById('res')
+            var ida = Number(i.value)
+
+            if (ida < 12) {
+                r.innerHTML = `<p>Você é uma criança, por tanto não tem acesso!</p>`
+                r.style.color = 'red'
+            }
+
+            if (ida >= 12 && ida <= 17) {
+                r.innerHTML = '<p>Você é adolescente, só podera acessar com autorização!</p>'
+                r.style.color = 'red'
+            }
+
+            if (ida >= 18 && ida <= 59) {
+                r.innerHTML = 'Você é adulto, por tanto pode entrar!'
+                r.style.color = 'green'
+            }
+
+            if (ida > 60) {
+                r.innerHTML = 'Você é idoso, por tanto pode entrar!'
+                r.style.color = 'green'
+            }
+        }
+    </script>
+</body>
+</html>
