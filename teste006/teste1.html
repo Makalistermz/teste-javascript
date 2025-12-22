@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Testando</h1>
+
+    <input type="number" name="num1" id="num1">
+
+    <input type="button" value="Calcular" onclick="calcular()">
+
+    <p id="res"></p>
+
+    <script>
+        function calcular () {
+            var num = document.getElementById('num1')
+            var n1 = Number(num.value)
+            var r = document.getElementById('res')
+
+            if (n1 <= 5) {
+                r.innerHTML = 'Abaixo da média <strong>REPROVADO</strong>'
+            } else if (n1 == 6)  {
+                r.innerHTML = 'Na média estude mais para melhorar!'
+            } else if (n1 >= 7) {
+                r.innerHTML = 'Acima da média muito bom!'
+            }
+        }
+    </script>
+</body>
+</html>
