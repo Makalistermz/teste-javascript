@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+html {
+    background-image: url(imagens/pexels-therato-1933239.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+#editar {
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+#a {
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#num {
+    width: 200px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.596);
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+#buttom {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 22px;
+}
+
+#n1 {
+    display: none;
+}
+
+.b {
+    font-size: 20px;
+    margin-left: 20px;
+}
