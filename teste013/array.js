@@ -4,11 +4,11 @@ num.push(4) //add o numero 4 na ultima casa
 num.sort() //add na orden crescente
 
 for (let a = 0; a < num.length; a++) {
-    console.log(`O numero ${num} esta na casa ${a}`)
+    console.log(`A posição ${a} tem o valor ${num[a]}`)
 }
 
-console.log(num)
 console.log(`O Array tem ${num.length} numeros`)
+
 let lot = num.indexOf(7)
 
 if (lot == -1){
