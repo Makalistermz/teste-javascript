@@ -5,20 +5,21 @@ function calcularDesconto(preco, percentualDesconto) {
 const resultado = calcularDesconto(200, .30);
 console.log(resultado);
 
-function processarCompra(precoProduto, quantidade, temDesconto) {
-
-    const PrecoTotal = processarCompra
+function processarCompra(precoProduto, quantidade, temDesconto, desconto) {
 
     if (precoProduto && quantidade > 0) {
-        return precoProduto * quantidade;
 
         if (temDesconto === true) {
-
+            return (precoProduto * quantidade) - (desconto * (precoProduto * quantidade))
         } else {
-            return PrecoTotal
+            return precoProduto * quantidade;
         }
 
     } else {
         return "Valores inválidos";
     }
 }
+
+const Precos = processarCompra(100, 3, true, .15);
+
+console.log(Precos);
